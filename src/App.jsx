@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 import WhatsAppFloat from './components/WhatsAppFloat';
 import ScrollProgress from './components/ScrollProgress';
 import SectionReveal from './components/SectionReveal';
+import Founders from './components/Founders';
 
 function App() {
   useEffect(() => {
@@ -42,6 +43,10 @@ function App() {
 
       <SectionReveal direction="left" delay={0.05}>
         <About />
+      </SectionReveal>
+
+      <SectionReveal direction="scale" delay={0.05}>
+        <Founders />
       </SectionReveal>
 
       <SectionReveal direction="up" delay={0.05}>
