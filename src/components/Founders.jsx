@@ -86,7 +86,7 @@ export default function Founders() {
                   <img
                     src={person.image}
                     alt={person.name}
-                    className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                    className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
                   />
                   {/* Gradient overlay at bottom */}
                   <div
