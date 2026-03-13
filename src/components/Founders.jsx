@@ -4,7 +4,7 @@ const founders = [
   {
     name: 'Founder',
     role: 'Founder & CEO',
-    image: '/founder.jpeg',
+    image: '/founder_pic.jpeg',
     quote: 'Every great chai starts with passion — we built this brand to bring that passion to every café in India.',
     socials: { color: 'from-red-400 to-rose-600' },
   },
@@ -86,7 +86,8 @@ export default function Founders() {
                   <img
                     src={person.image}
                     alt={person.name}
-                    className="w-full h-full object-cover object-center transition-transform duration-700 group-hover:scale-105"
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    style={{ objectPosition: person.name === 'Founder' ? 'center 20%' : 'center' }}
                   />
                   {/* Gradient overlay at bottom */}
                   <div
