@@ -131,7 +131,7 @@ export default function ContactBanner() {
           viewport={{ once: true }}
           transition={{ delay: 0.5 }}
         >
-          ✉️ nanichandu610@gmail.com &nbsp;·&nbsp; 📍 Sarjapur Road, India
+          ✉️ nanichandu610@gmail.com &nbsp;·&nbsp; 📍 opposite to New Wipro Gate1, Sarjapur Road, Ambedkar Nagar-5600035
         </motion.p>
       </div>
     </section>

@@ -86,7 +86,7 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <span className="text-primary mt-0.5 flex-shrink-0 text-sm">📍</span>
                 <p className="text-gray-400 text-sm">
-                  Hyderabad, Telangana, India
+                  opposite to New Wipro Gate1, Sarjapur Road, Ambedkar Nagar-5600035
                 </p>
               </li>
               <li className="flex items-start gap-3">

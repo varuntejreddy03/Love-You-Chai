@@ -4,7 +4,7 @@ const info = [
   {
     icon: '📍',
     label: 'Address',
-    value: 'Hyderabad, Telangana, India',
+    value: 'opposite to New Wipro Gate1, Sarjapur Road, Ambedkar Nagar-5600035',
     href: null,
   },
   { icon: '📞', label: 'Phone', value: '9914789164', href: 'tel:9914789164' },
@@ -135,25 +135,44 @@ export default function Location() {
             </div>
           </motion.div>
 
-          {/* Map */}
+          {/* Service Areas */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: '-60px' }}
             transition={{ duration: 0.8, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
-            className="rounded-3xl overflow-hidden shadow-xl"
+            className="rounded-3xl shadow-xl bg-white border border-red-50 p-8 sm:p-10 flex flex-col justify-center items-center relative overflow-hidden h-full"
             style={{ minHeight: '320px' }}
           >
-            <iframe
-              title="Love You Chai Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15225.8643195232!2d78.473528!3d17.385044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana%2C%20India!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus"
-              width="100%"
-              height="100%"
-              style={{ minHeight: '320px', border: 0, display: 'block' }}
-              allowFullScreen=""
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
+            {/* Subtle diagonal stripe background */}
+            <div className="absolute inset-0 pointer-events-none opacity-60"
+              style={{
+                backgroundImage: 'repeating-linear-gradient(45deg, #fff5f5 0px, #fff5f5 2px, transparent 2px, transparent 15px)',
+              }}
             />
+            {/* Soft red glow spot */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full pointer-events-none opacity-20 blur-3xl bg-primary" />
+
+            <h3 className="text-gray-500 text-lg sm:text-xl font-medium mb-8 relative z-10 text-center">
+              Trusted by chai café owners across <span className="font-semibold text-charcoal">India</span>
+            </h3>
+
+            <div className="flex justify-center gap-3 sm:gap-4 flex-wrap relative z-10">
+              {['Hyderabad', 'Sarjapur Road', 'Koramangala', 'Electronic City', 'Whitefield', 'HSR Layout'].map((area, i) => (
+                <motion.div
+                  key={area}
+                  className="flex items-center text-sm md:text-base text-gray-600 bg-red-50 px-5 py-2.5 rounded-full border border-red-100 shadow-sm"
+                  initial={{ opacity: 0, scale: 0.8 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  whileHover={{ y: -3, boxShadow: '0 10px 15px -3px rgba(232, 25, 44, 0.1)' }}
+                  viewport={{ once: true }}
+                  transition={{ delay: 0.3 + i * 0.08, duration: 0.4 }}
+                >
+                  <span className="text-primary mr-2 text-lg leading-none">📍</span>
+                  {area}
+                </motion.div>
+              ))}
+            </div>
           </motion.div>
         </div>
       </div>
