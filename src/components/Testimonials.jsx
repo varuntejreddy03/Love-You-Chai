@@ -2,27 +2,27 @@ import { motion } from 'framer-motion';
 
 const testimonials = [
   {
-    name: 'Mohan Gowda',
-    role: 'Owner, Sip & Smile Café, Sarjapur',
-    review: 'Been sourcing from Love You Chai for over a year now. Their masala tea premix is literally what keeps my customers coming back every morning. Delivery is always on time, even on holidays!',
+    name: 'Dipan Kumar Rout',
+    role: 'Local Guide',
+    review: 'Their elaichi chai is too good. Give it a try.',
     rating: 5,
-    initial: 'M',
+    initial: 'D',
     color: 'from-red-400 to-rose-500',
   },
   {
-    name: 'Kavitha Nair',
-    role: 'Founder, Chai Pe Charcha, Koramangala',
-    review: 'The packaging and cups they supply are top quality — my café looks so much more professional now. Plus their spice blends are incredibly aromatic. Love working with this team!',
+    name: 'Ak B',
+    role: 'Local Guide',
+    review: 'They mastered just one thing—chai. And they’ve been delivering it with unwavering consistency. Go to place for many now.',
     rating: 5,
-    initial: 'K',
+    initial: 'A',
     color: 'from-orange-400 to-red-500',
   },
   {
-    name: 'Venkatesh B.',
-    role: 'Manager, The Chai Stop, Electronic City',
-    review: "What I love most is how responsive they are. Ran out of premix on a busy Saturday morning — called them at 6AM and they delivered within 2 hours! That's real service.",
+    name: 'Srinivas Sai',
+    role: '1 review',
+    review: "If you're having tea here then you feel you're out of this world. If you're a tea person and when you get a perfect tea then it will relax you. The same feeling i get here when i take a sip.",
     rating: 5,
-    initial: 'V',
+    initial: 'S',
     color: 'from-pink-500 to-red-600',
   },
 ];
@@ -144,7 +144,7 @@ export default function Testimonials() {
           viewport={{ once: true }}
           transition={{ delay: 0.5 }}
         >
-          ⭐ Loved by chai café owners across Bangalore · Sarjapur Road & beyond
+          ⭐ Loved by chai café owners across India
         </motion.p>
       </div>
     </section>

@@ -94,12 +94,42 @@ export default function Hero() {
 
           {/* ── LEFT TEXT BLOCK (60%) ── */}
           <motion.div
-            className="md:col-span-7 text-center md:text-left pr-0 md:pr-8"
+            className="md:col-span-7 text-center md:text-left pr-0 md:pr-8 flex flex-col items-center md:items-start pt-4 sm:pt-10 md:pt-0 relative z-30"
             style={{ y: textYSpring, opacity: opacityOut }}
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}
           >
+            {/* Mobile Logo centered at top */}
+            <motion.div
+              className="md:hidden flex justify-center items-center mb-6 z-40"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ delay: 0.1, duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            >
+              <div className="relative flex items-center justify-center">
+                {/* Soft glow */}
+                <div
+                  className="absolute rounded-full pointer-events-none"
+                  style={{ width: '130px', height: '130px', boxShadow: '0 0 30px rgba(255,255,255,0.3)', borderRadius: '50%' }}
+                />
+                {/* Rotating dashed ring */}
+                <motion.div
+                  className="absolute rounded-full"
+                  style={{ width: '150px', height: '150px', border: '2px dashed white', opacity: 0.7 }}
+                  animate={{ rotate: 360 }}
+                  transition={{ duration: 15, repeat: Infinity, ease: 'linear' }}
+                />
+                {/* Logo circle */}
+                <img
+                  src="/logo.jpg"
+                  alt="Love You Chai"
+                  className="rounded-full object-cover relative z-10"
+                  style={{ width: '130px', height: '130px', border: '4px solid white', boxShadow: '0 8px 25px rgba(0,0,0,0.3)' }}
+                />
+              </div>
+            </motion.div>
+
             {/* Label pill */}
             <motion.div
               initial={{ opacity: 0, y: -20 }}
@@ -107,7 +137,7 @@ export default function Hero() {
               transition={{ delay: 0.2 }}
               className="inline-flex items-center gap-2 bg-white bg-opacity-20 text-white rounded-full px-4 py-1.5 text-xs sm:text-sm font-medium mb-6"
             >
-              <span>☕</span> Bangalore's Premier Chai Supplier
+              <span>☕</span> India's Premier Chai Supplier
             </motion.div>
 
             {/* Main heading */}
@@ -143,7 +173,7 @@ export default function Hero() {
               className="text-white text-opacity-90 text-base sm:text-lg leading-relaxed mb-8 max-w-lg mx-auto md:mx-0"
             >
               Supplying everything your tea café needs — freshly, lovingly, daily.
-              Your trusted partner for all chai café essentials in Bangalore.
+              Your trusted partner for all chai café essentials in India.
             </motion.p>
 
             {/* CTAs */}

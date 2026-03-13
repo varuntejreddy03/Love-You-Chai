@@ -59,7 +59,7 @@ export default function Navbar() {
               {/* Logo circle + rotating dashed ring + steam */}
               <div className="relative flex items-center justify-center flex-shrink-0" style={{ width: 60, height: 60 }}>
                 {/* Steam emoji — floats up on hover via CSS */}
-                <span className="nav-steam">☕</span>
+                <span className="nav-steam">🫖</span>
 
                 {/* Rotating dashed red ring */}
                 <div
@@ -86,7 +86,7 @@ export default function Navbar() {
               </div>
 
               {/* Brand text */}
-              <div className="min-w-0 hidden sm:block">
+              <div className="min-w-0 block">
                 <span
                   className="font-pacifico block leading-tight truncate"
                   style={{ fontSize: 22, color: '#E8192C', fontWeight: 'bold' }}

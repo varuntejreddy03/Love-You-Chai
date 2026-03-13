@@ -183,9 +183,9 @@ export default function About() {
                 className="space-y-4"
               >
                 {[
-                  <>Born from a deep love for chai and the people who serve it, <strong>Love You Chai</strong> is Bangalore's most trusted supplier. We started with a simple belief: every cup of tea tells a story, and a great cup starts with great ingredients.</>,
-                  <>Based in Bangalore on Sarjapur Road, we supply premium tea premixes, fresh dairy essentials, quality packaging, aromatic spices, and branding materials to cafés across the city — your one-stop partner for all chai café needs.</>,
-                  <>We believe in freshness, reliability, and community. When you partner with us, you're not just getting a supplier — you're getting a family as passionate about chai as you are. 🍵</>,
+                  <>The story of <strong>Love You Chai</strong> began with a husband and wife, united by an endless love for the perfect cup of tea. They spent countless days and nights passionately researching the finest chai masala, driven by a dream to share their perfect blend.</>,
+                  <>Through sheer hard work and dedication, they ethically sourced the most aromatic spices and premium tea powders. Today, what started as a family's humble quest has grown into India's most trusted supplier for cafés.</>,
+                  <>We believe that every cup of tea tells a beautiful story of perseverance and love. When you partner with us, you're not just getting a supplier — you're joining a family as passionate about chai as you are. 🍵</>,
                 ].map((txt, i) => (
                   <motion.p
                     key={i}

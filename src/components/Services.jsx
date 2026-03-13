@@ -50,7 +50,7 @@ const icons = {
 };
 
 const services = [
-  { Icon: icons.Tea, title: 'Tea Premixes & Blends', desc: 'Premium quality tea premixes and specialty blends for every café taste preference.', badge: 'Bestseller' },
+  { Icon: icons.Tea, title: 'Tea powder and masala', desc: 'Premium quality tea powder and masala for every café taste preference.', badge: 'Bestseller' },
   { Icon: icons.Milk, title: 'Milk & Dairy Essentials', desc: 'Fresh milk, condensed milk, and dairy products sourced and delivered daily.', badge: null },
   { Icon: icons.Cup, title: 'Cups, Straws & Packaging', desc: 'Eco-friendly disposables and custom branded packaging for your café.', badge: 'Eco' },
   { Icon: icons.Spice, title: 'Spices & Masala', desc: 'Authentic chai masala and hand-picked spices for that signature aroma.', badge: null },

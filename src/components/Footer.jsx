@@ -21,7 +21,7 @@ export default function Footer() {
               </div>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-5">
-              For the Love of Chai — your trusted partner for all chai café essentials in Bangalore.
+              For the Love of Chai — your trusted partner for all chai café essentials in India.
             </p>
             <div className="flex gap-3">
               {['☕', '🫖', '❤️'].map((icon) => (
@@ -86,7 +86,7 @@ export default function Footer() {
               <li className="flex items-start gap-3">
                 <span className="text-primary mt-0.5 flex-shrink-0 text-sm">📍</span>
                 <p className="text-gray-400 text-sm">
-                  Opp. New Wipro Gate 1, Sarjapur Road, Ambedkar Nagar, Bangalore – 560035
+                  Hyderabad, Telangana, India
                 </p>
               </li>
               <li className="flex items-start gap-3">
@@ -142,7 +142,7 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-5 flex flex-col sm:flex-row items-center justify-between gap-2">
           <p className="text-gray-500 text-xs sm:text-sm">© 2025 Love You Chai. All rights reserved.</p>
           <p className="text-gray-600 text-xs flex items-center gap-1">
-            Made with <span className="text-primary">❤️</span> in Bangalore
+            Made with <span className="text-primary">❤️</span> in India
           </p>
         </div>
       </div>

@@ -5,7 +5,7 @@ const founders = [
     name: 'Founder',
     role: 'Founder & CEO',
     image: '/founder.jpeg',
-    quote: 'Every great chai starts with passion — we built this brand to bring that passion to every café in Bangalore.',
+    quote: 'Every great chai starts with passion — we built this brand to bring that passion to every café in India.',
     socials: { color: 'from-red-400 to-rose-600' },
   },
   {
@@ -59,7 +59,7 @@ export default function Founders() {
             Meet the Team
           </h2>
           <p className="text-gray-500 text-base sm:text-lg max-w-xl mx-auto">
-            The passionate minds behind Love You Chai — turning a simple love for tea into Bangalore's most trusted chai supplier.
+            The passionate minds behind Love You Chai — turning a simple love for tea into India's most trusted chai supplier.
           </p>
         </motion.div>
 
