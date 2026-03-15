@@ -121,17 +121,17 @@ export default function WhyUs() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3 }}
         >
-          <p className="text-gray-400 text-sm mb-4">Trusted by chai café owners across Hyderabad</p>
+          <p className="text-gray-400 text-sm mb-4">Trusted by chai café owners across India</p>
           <div className="flex justify-center gap-2 flex-wrap">
             <motion.span
-              key="hyderabad"
+              key="india"
               className="text-xs text-gray-400 bg-red-50 px-3 py-1 rounded-full border border-red-100"
               initial={{ opacity: 0, scale: 0.8 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.4 }}
             >
-              📍 Hyderabad
+              📍 India
             </motion.span>
           </div>
         </motion.div>
