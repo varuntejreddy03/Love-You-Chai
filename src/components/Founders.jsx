@@ -4,7 +4,7 @@ const founders = [
   {
     name: 'Founder',
     role: 'Founder & CEO',
-    image: '/founder.png',
+    image: '/founder.jpg',
     objectPosition: 'center 20%',
     quote: 'Every great chai starts with passion — we built this brand to bring that passion to every café in India.',
     socials: { color: 'from-red-400 to-rose-600' },

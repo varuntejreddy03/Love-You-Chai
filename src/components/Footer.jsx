@@ -138,12 +138,14 @@ export default function Footer() {
       </div>
 
       {/* Bottom bar */}
-      <div className="border-t border-gray-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-5 flex flex-col sm:flex-row items-center justify-between gap-2">
-          <p className="text-gray-500 text-xs sm:text-sm">© 2025 Love You Chai. All rights reserved.</p>
-          <p className="text-gray-600 text-xs flex items-center gap-1">
-            Made with <span className="text-primary">❤️</span> in India
+      <div className="border-t border-gray-800" style={{ background: '#1a1a1a' }}>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-5 flex flex-col items-center gap-1.5 text-center">
+          <p className="text-gray-500 text-xs sm:text-sm flex items-center gap-1.5">
+            Made with ❤️ by
+            <img src="/saffarc.jpg" alt="StaffArc" className="w-5 h-5 rounded-full object-cover inline-block" />
+            StaffArc
           </p>
+          <p className="text-gray-600 text-xs">© 2026 loveyouchai.com. All rights reserved.</p>
         </div>
       </div>
     </footer>
